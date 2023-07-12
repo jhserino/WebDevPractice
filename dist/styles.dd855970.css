@@ -1,3 +1,7 @@
+:root {
+  --green-color: #00ff00;
+}
+
 /* 
   We collapse the borders of each cell. 
   By default each cell has its own borders 
@@ -5,6 +9,7 @@
 */
 table {
   border-collapse: collapse;
+  width: 480px;
 }
 
 /* 
@@ -20,6 +25,72 @@ table td {
 label {
   display: flex;
   flex-direction: column;
+}
+
+/* Messing with Class Selector */
+.text {
+  color: tomato;
+  font-size: 18px;
+  background-color: lightblue;
+}
+
+/* Messing with :hover pseudo-class */
+a {
+  color: darkblue;
+}
+a:hover {
+  color: lightgreen;
+}
+
+/* Messing with combining hover and 
+focus pseudo-classes */
+.link-one {
+  color: purple;
+}
+.link-one:hover {
+  color: orange;
+}
+.link-one:focus {
+  color: red;
+}
+.link-two {
+  color: orangered;
+}
+.link-two:active {
+  color: silver;
+}
+.link-two:visited {
+  color: purple;
+}
+
+.link-three {
+  color: var(--green-color);
+}
+/* Messing with overriding properties */
+.links {
+  font-size: 18px;
+  font-weight: 600;
+  color: red;
+}
+.links.one {
+  color: purple;
+  text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+}
+.links.two {
+  color: brown;
+  text-shadow: 1px 3px 4px lightgoldenrodyellow;
+}
+/* Messing around with different fonts*/
+.fontchange {
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-weight: 400;
+}
+.header {
+  font-family: Georgia;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
 }
 
 
