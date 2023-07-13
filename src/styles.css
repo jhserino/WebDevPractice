@@ -92,3 +92,67 @@ focus pseudo-classes */
   font-weight: 500;
   font-style: italic;
 }
+
+/* Messing with first-child pseudo class*/
+.item {
+  color: blue;
+}
+
+.item:nth-child(2n) {
+  color: purple;
+}
+.item:nth-child(2n-1) {
+  color: brown;
+}
+.item:first-child {
+  color: red;
+}
+.item:last-child {
+  color: green;
+}
+li:not(:last-child) {
+  background-color: lightblue;
+}
+/* Inline-block element practice */
+.submit-btn {
+  padding: 10px 20px;
+  background-color: yellow;
+  color: blue;
+  font-size: 24px;
+}
+
+.main-box {
+  background-color: indianred;
+  width: 100px;
+  height: 100px;
+}
+
+.first-box {
+  background-color: darkmagenta;
+  width: 30px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.second-box {
+  background-color: thistle;
+  width: 30px;
+  height: 15px;
+  margin-left: 30px;
+}
+
+.third-box {
+  background-color: olivedrab;
+  width: 50px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  border-left: 1px solid firebrick;
+  border-right: 3px dashed seagreen;
+  padding-left: 10px;
+  padding-right: 5px;
+  margin-left: 5px;
+  margin-right: 15px;
+}
