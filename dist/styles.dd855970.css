@@ -157,5 +157,17 @@ a {
   margin-right: 15px;
 }
 
+ul {
+  list-style: none;
+}
+.list {
+  display: flex;
+}
+
+.list li {
+  border: 1px solid green;
+}
+
+
 
 /*# sourceMappingURL=/styles.dd855970.css.map */

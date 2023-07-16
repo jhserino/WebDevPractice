@@ -156,3 +156,15 @@ a {
   margin-left: 5px;
   margin-right: 15px;
 }
+
+ul {
+  list-style: none;
+}
+.list {
+  display: flex;
+}
+
+.list li {
+  border: 1px solid green;
+}
+
